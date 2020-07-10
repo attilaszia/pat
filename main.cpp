@@ -93,10 +93,6 @@ Uint32 my_callbackfunc(Uint32 interval, void* param)
     SDL_Event event;
     SDL_UserEvent userevent;
 
-    /* In this example, our callback pushes an SDL_USEREVENT event
-    into the queue, and causes our callback to be called again at the
-    same interval: */
-
     userevent.type = SDL_USEREVENT;
     userevent.code = 0;
     userevent.data1 = NULL;
